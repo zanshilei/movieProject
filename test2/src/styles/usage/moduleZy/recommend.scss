@@ -1,0 +1,16 @@
+.recommend {
+    height: 100%;
+    overflow: hidden;
+   
+    .cont {
+        width: 100%;
+        height:2.3rem;
+        background:lightblue;
+        @include flexbox();
+        @include flex-direction(row);
+        li{
+            height:2.3rem;
+            background:lightcyan;
+        }
+    }
+}
