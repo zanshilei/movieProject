@@ -1,0 +1,108 @@
+@charset "UTF-8" body,
+html {
+    height: 100%;
+    font-size:100px;
+}
+#app {
+    height: 100%;
+}
+#app>div {
+    height: 100%;
+}
+.m-index {
+    @include flexbox();
+    @include flex-direction(column);
+    height: 100%;
+    nav {
+        height: 0.44rem;
+        background: white;
+        padding: 0 0.15rem;
+        @include flexbox();
+        @include border(0 0 1px 0, #e8e8e8);
+        ul {
+            height: 0.44rem;
+            width: 100%;
+            @include flexbox();
+            a { 
+                width: 100%;
+                @include flexbox();
+                @include align-items();
+                @include justify-content(center);
+                @include flex();
+                @include flex-direction(column);
+                height: 0.44rem;    
+               
+                .active span{color:#cf5c64}           
+                li {                   
+                    width: 100%;
+                    @include flexbox();
+                    @include align-items();
+                    @include justify-content(center);
+                    @include flex-direction(column);
+                    height: 0.44rem;
+                   
+                    span {
+                        font-size: 0.1rem;
+                        color: #b0b1b1;
+                        height: 0.22rem;
+                        line-height: 0.24rem;
+                        
+                    }
+                     .yo-ico{font-size: 0.18rem;}
+                     
+                }
+                
+            }
+        }
+    }
+    section {
+        @include flex(1);       
+        color: lightcoral;
+        font-size: 0.25rem;
+        width: 100%;
+        background: lightgray;
+        
+        overflow: hidden;
+    }
+    
+}
+//  nav {
+//      height: 0.44rem;
+//      background: white;
+//      padding:0.15rem;
+//       @include flexbox();
+//       line-height: 0.44rem;
+//       align-items: center;
+//       @include border(0 0 1px 0,#e8e8e8)
+//       div{
+//            @include flex();
+//            
+//              
+//       }
+//       button{
+//           line-height: 0.3rem;
+//           width:0.84rem;
+//           border-radius: 0.15rem;
+//           height:0.3rem;
+//           border:0;
+//           color:green;
+//       }
+//  }
+//  section {
+//      @include  flex(1);
+//      width:100%;
+//      background: white;
+//  }
+//   header {
+//      height: 0.45rem;
+//      background: pink;
+//      line-height: 0.45rem;
+//      text-align: center;
+//      color:white;
+//      font-size:0.18rem;
+//  }
+//  
+//  footer {
+//      height: 0.45rem;
+//      background: lightcoral;
+//  }
