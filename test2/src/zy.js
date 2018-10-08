@@ -32,7 +32,7 @@ ReactDOM.render((
 			</Route>
 			<Route path='mine' component={Mine} onEnter={onEnterHandler.bind(this,'mine')}>
 			</Route>
-			<Route path='cinema' component={Cinema} onEnter={onEnterHandler.bind(this,'cinema')}>
+			<Route path='cinema2' component={Cinema} onEnter={onEnterHandler.bind(this,'cinema')}>
 			</Route>	
 		</Route>		
 	</Router>
